@@ -13,7 +13,7 @@ export const generateJWTAndSetCookie=(res,id)=>{
         res.cookie("jwt",token,{
             httpOnly:true,//  prevents xss attack
             secure:process.env.ENV=="production", // only sent over HTTPS (set false for localhost)
-            sameSite:"none",
+            sameSite:process.env.ENV=="production"?"none":"lax",
             maxAge:7*24*60*60*1000 //7days in miliseconds
         })
         
