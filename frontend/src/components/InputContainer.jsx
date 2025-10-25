@@ -70,6 +70,7 @@ const InputContainer = () => {
         <button
           className="btn  flex justify-center items-center p-2"
           onClick={handleClick}
+          type="button"
           disabled={isSendingMessage}
         >
           <FaImage size={19} />

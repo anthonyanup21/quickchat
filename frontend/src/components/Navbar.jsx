@@ -10,6 +10,7 @@ const Navbar = () => {
 
   const handleLogout = async (e) => {
     await logout();
+    navigate("/login")
   };
   return (
     <nav className="flex items-center justify-between px-6 py-4 bg-base-300 text-base-content shadow-lg">
