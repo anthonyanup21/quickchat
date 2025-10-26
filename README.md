@@ -82,7 +82,7 @@ Hide secret messages inside images using a custom key! 🕵️‍♂️
 
 Create a `.env` file in the **backend** directory and configure the following:
 
-PORT=3000
+PORT=3000 \n
 MONGODB_URL=your_mongodb_atlas_url
 SECRET=your_jwt_secret
 ENV=development
