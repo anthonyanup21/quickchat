@@ -125,7 +125,9 @@ Docker Desktop
  installed and running
 
 Update the environment variables in the DockerCompose.yml file with your credentials (MongoDB, Cloudinary, JWT secret, etc.)
+
 Example in DockerCompose.yml:
+
 environment:
   - PORT=3000
   - MONGODB_URL=your_mongodb_atlas_connection_url
@@ -135,14 +137,18 @@ environment:
   - CLOUDINARY_API_KEY=your_cloudinary_api_key
   - CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 
+
 🚀 Steps to Run
+
 cd quickchat
 docker compose -f DockerCompose.yml up -d
 
 This will build and start both frontend and backend containers automatically.
 
 Frontend: http://localhost:5173
+
 Backend: http://localhost:3000
+
 
 🛑 To Stop the Containers
 docker compose down
