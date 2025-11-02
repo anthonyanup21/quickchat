@@ -75,7 +75,7 @@ export const logout = async (req, res) => {
         res.clearCookie("jwt",{
             httpOnly:true,
             secure:process.env.ENV=="production",
-            sameSite:process.env.ENV=="production"?"none":"lax",
+            sameSite:process.env.ENV=="production"?"None":"lax",
         })
         res.status(200).json({ success: true, message: "Logged out successfully" })
 
